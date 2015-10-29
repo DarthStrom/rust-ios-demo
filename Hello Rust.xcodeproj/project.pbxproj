@@ -7,14 +7,20 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		966B3DDC1BE272B900F6DE81 /* libhello.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 966B3DD71BE2722300F6DE81 /* libhello.a */; };
+		96A6E52F1BE039D100A8DBA0 /* rust-logo-512x512.png in Resources */ = {isa = PBXBuildFile; fileRef = 96A6E52E1BE039D100A8DBA0 /* rust-logo-512x512.png */; };
 		96F852951BD3EE3800C4F83B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F852941BD3EE3800C4F83B /* AppDelegate.swift */; };
 		96F852971BD3EE3800C4F83B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F852961BD3EE3800C4F83B /* ViewController.swift */; };
 		96F8529A1BD3EE3900C4F83B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F852981BD3EE3900C4F83B /* Main.storyboard */; };
 		96F8529C1BD3EE3900C4F83B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96F8529B1BD3EE3900C4F83B /* Assets.xcassets */; };
 		96F8529F1BD3EE3900C4F83B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96F8529D1BD3EE3900C4F83B /* LaunchScreen.storyboard */; };
+		96F852AB1BD3FEB500C4F83B /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96F852AA1BD3FEB500C4F83B /* Util.swift */; };
+		96F852AD1BD4036E00C4F83B /* ObjectiveUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = 96F852AC1BD4036E00C4F83B /* ObjectiveUtil.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		966B3DD71BE2722300F6DE81 /* libhello.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libhello.a; path = "rust-lib/target/fat/release/libhello.a"; sourceTree = "<group>"; };
+		96A6E52E1BE039D100A8DBA0 /* rust-logo-512x512.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "rust-logo-512x512.png"; sourceTree = "<group>"; };
 		96F852911BD3EE3800C4F83B /* Hello Rust.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Hello Rust.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		96F852941BD3EE3800C4F83B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96F852961BD3EE3800C4F83B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +28,11 @@
 		96F8529B1BD3EE3900C4F83B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96F8529E1BD3EE3900C4F83B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96F852A01BD3EE3900C4F83B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96F852A81BD3EEDF00C4F83B /* hello.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = hello.h; sourceTree = "<group>"; };
+		96F852A91BD3EF2F00C4F83B /* Hello-Rust-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Hello-Rust-Bridging-Header.h"; sourceTree = "<group>"; };
+		96F852AA1BD3FEB500C4F83B /* Util.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		96F852AC1BD4036E00C4F83B /* ObjectiveUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ObjectiveUtil.m; sourceTree = "<group>"; };
+		96F852AE1BD409E200C4F83B /* ObjectiveUtil.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjectiveUtil.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				966B3DDC1BE272B900F6DE81 /* libhello.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,6 +50,9 @@
 		96F852881BD3EE3800C4F83B = {
 			isa = PBXGroup;
 			children = (
+				966B3DD71BE2722300F6DE81 /* libhello.a */,
+				96F852A81BD3EEDF00C4F83B /* hello.h */,
+				96F852A91BD3EF2F00C4F83B /* Hello-Rust-Bridging-Header.h */,
 				96F852931BD3EE3800C4F83B /* Hello Rust */,
 				96F852921BD3EE3800C4F83B /* Products */,
 			);
@@ -54,12 +69,16 @@
 		96F852931BD3EE3800C4F83B /* Hello Rust */ = {
 			isa = PBXGroup;
 			children = (
+				96A6E52E1BE039D100A8DBA0 /* rust-logo-512x512.png */,
 				96F852941BD3EE3800C4F83B /* AppDelegate.swift */,
 				96F852961BD3EE3800C4F83B /* ViewController.swift */,
 				96F852981BD3EE3900C4F83B /* Main.storyboard */,
 				96F8529B1BD3EE3900C4F83B /* Assets.xcassets */,
 				96F8529D1BD3EE3900C4F83B /* LaunchScreen.storyboard */,
 				96F852A01BD3EE3900C4F83B /* Info.plist */,
+				96F852AA1BD3FEB500C4F83B /* Util.swift */,
+				96F852AE1BD409E200C4F83B /* ObjectiveUtil.h */,
+				96F852AC1BD4036E00C4F83B /* ObjectiveUtil.m */,
 			);
 			path = "Hello Rust";
 			sourceTree = "<group>";
@@ -96,6 +115,7 @@
 				TargetAttributes = {
 					96F852901BD3EE3800C4F83B = {
 						CreatedOnToolsVersion = 7.1;
+						DevelopmentTeam = SPU386ZNKS;
 					};
 				};
 			};
@@ -123,6 +143,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				96F8529F1BD3EE3900C4F83B /* LaunchScreen.storyboard in Resources */,
+				96A6E52F1BE039D100A8DBA0 /* rust-logo-512x512.png in Resources */,
 				96F8529C1BD3EE3900C4F83B /* Assets.xcassets in Resources */,
 				96F8529A1BD3EE3900C4F83B /* Main.storyboard in Resources */,
 			);
@@ -135,8 +156,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96F852AB1BD3FEB500C4F83B /* Util.swift in Sources */,
 				96F852971BD3EE3800C4F83B /* ViewController.swift in Sources */,
 				96F852951BD3EE3800C4F83B /* AppDelegate.swift in Sources */,
+				96F852AD1BD4036E00C4F83B /* ObjectiveUtil.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -247,10 +270,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Hello Rust/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/rust-lib/target/fat/release",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.peapodmm.Hello-Rust";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hello-Rust-Bridging-Header.h";
 			};
 			name = Debug;
 		};
@@ -258,10 +290,19 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "Hello Rust/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+					"$(PROJECT_DIR)/rust-lib/target/fat/release",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.peapodmm.Hello-Rust";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Hello-Rust-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -284,6 +325,7 @@
 				96F852A51BD3EE3900C4F83B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

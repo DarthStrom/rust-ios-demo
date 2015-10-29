@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="8150" systemVersion="15A204g" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9058" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8122"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9048"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -15,8 +18,30 @@
                     <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rust-logo-512x512.png" translatesAutoresizingMaskIntoConstraints="NO" id="16G-HQ-gZe">
+                                <rect key="frame" x="44" y="44" width="512" height="512"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="16G-HQ-gZe" secondAttribute="height" multiplier="1:1" id="Nz9-qF-838"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="16G-HQ-gZe" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Cdg-NK-tsq"/>
+                            <constraint firstItem="16G-HQ-gZe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="24" id="EYE-Fx-Ov0"/>
+                            <constraint firstItem="16G-HQ-gZe" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" constant="24" id="Ufd-LA-fyK"/>
+                            <constraint firstItem="16G-HQ-gZe" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="24" id="obp-yB-bfK"/>
+                            <constraint firstItem="16G-HQ-gZe" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="rGw-7V-ezu"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="EYE-Fx-Ov0"/>
+                                <exclude reference="Ufd-LA-fyK"/>
+                            </mask>
+                        </variation>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -24,4 +49,7 @@
             <point key="canvasLocation" x="53" y="375"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="rust-logo-512x512.png" width="512" height="512"/>
+    </resources>
 </document>
