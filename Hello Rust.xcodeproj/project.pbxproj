@@ -116,6 +116,7 @@
 					96F852901BD3EE3800C4F83B = {
 						CreatedOnToolsVersion = 7.1;
 						DevelopmentTeam = SPU386ZNKS;
+						LastSwiftMigration = 0830;
 					};
 				};
 			};
@@ -283,6 +284,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.peapodmm.Hello-Rust";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hello-Rust-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
 		};
@@ -303,6 +305,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.peapodmm.Hello-Rust";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "Hello-Rust-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
 		};
