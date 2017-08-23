@@ -1,5 +1,5 @@
 public func dotProduct(vector1: [Double], vector2: [Double]) -> Double {
-    
+
     return zip(vector1, vector2)
         .lazy
         .map(*)
@@ -16,7 +16,7 @@ public func generateRandomArrayOfSize(var size: Int) -> [Double] {
 }
 
 public func randomDoubleBetween(lower: Double, andUpper upper: Double) -> Double {
-    let arc4randomMax:Double = 0x100000000
-    let result = ((Double(arc4random()) / arc4randomMax) * (upper - lower) + lower)
+    let arc4randomMax: Double = 0x100000000
+    let result = (Double(arc4random()) / arc4randomMax) * (upper - lower) + lower
     return result
 }
